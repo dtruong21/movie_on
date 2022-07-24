@@ -8,7 +8,7 @@ abstract class Resource<T> {
 }
 
 class ResourceSuccess<T> extends Resource<T> {
-  const ResourceSuccess(DioError error) : super(error: error);
+  const ResourceSuccess(T data) : super(data: data);
 }
 
 class ResourceFailed<T> extends Resource<T> {
